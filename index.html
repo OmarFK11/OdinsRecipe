@@ -4,60 +4,53 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Recipe Haven</title>
 	<link rel="stylesheet" href="css/home.css">
-	<title>Omar's Recipes</title>
 </head>
 
 <body>
-	<!-- Navigation Bar -->
-	<nav>
-		<a href="index.html">Home</a>
-		<a href="html/recipes/lasagna.html">Lasagna</a>
-		<a href="html/recipes/spaghetti.html">Spaghetti</a>
-		<a href="html/recipes/tacos.html">Tacos</a>
-		<a href="html/contact.html">Contact</a>
-	</nav>
+	<header>
+		<nav>
+			<div class="logo">Recipe Haven</div>
+			<ul class="nav-links">
+				<li><a href="#home">Home</a></li>
+				<li><a href="#recipes">Recipes</a></li>
+				<li><a href="#about">About</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+		</nav>
+		<div class="hero-section">
+			<h1>Welcome to Recipe Haven</h1>
+			<p>Your ultimate destination for delicious recipes</p>
+			<a href="#recipes" class="cta-button">Explore Recipes</a>
+		</div>
+	</header>
 
-	<!-- Main Content -->
 	<main>
-		<h1>Omar's Recipes</h1>
-
-		<!-- Featured Recipe Section -->
-		<section id="featured-recipe">
-			<h2>Featured Recipe: Lasagna</h2>
-			<img src="images/lasagna.jpg" alt="Delicious Lasagna">
-			<p>Discover the secrets to making the perfect lasagna with Omar's special recipe. This dish is
-				sure to delight your family and friends with its rich flavors and comforting layers.</p>
-			<a href="html/recipes/lasagna.html" class="btn">View Recipe</a>
-		</section>
-
-		<!-- Other Recipes Section -->
-		<section id="other-recipes">
-			<h2>Other Recipes</h2>
-			<div class="recipe-card">
-				<img src="images/spaghetti.jpg" alt="Spaghetti">
-				<h3>Spaghetti</h3>
-				<p>Classic spaghetti with a homemade marinara sauce.</p>
-				<a href="html/recipes/spaghetti.html" class="btn">View Recipe</a>
-			</div>
-			<div class="recipe-card">
-				<img src="images/tacos.jpg" alt="Tacos">
-				<h3>Tacos</h3>
-				<p>Flavorful tacos with all your favorite toppings.</p>
-				<a href="html/recipes/tacos.html" class="btn">View Recipe</a>
-			</div>
-			<div class="recipe-card">
-				<img src="images/salad.jpg" alt="Salad">
-				<h3>Salad</h3>
-				<p>Fresh and healthy salad recipes for every taste.</p>
-				<a href="html/recipes/salad.html" class="btn">View Recipe</a>
+		<section id="featured-recipes">
+			<h2>Featured Recipes</h2>
+			<div class="recipes-container">
+				<div class="recipe-card">
+					<img src="https://via.placeholder.com/300" alt="Recipe 1">
+					<h3>Recipe 1</h3>
+					<p>Delicious and easy to make.</p>
+				</div>
+				<div class="recipe-card">
+					<img src="https://via.placeholder.com/300" alt="Recipe 2">
+					<h3>Recipe 2</h3>
+					<p>Perfect for any occasion.</p>
+				</div>
+				<div class="recipe-card">
+					<img src="https://via.placeholder.com/300" alt="Recipe 3">
+					<h3>Recipe 3</h3>
+					<p>A family favorite.</p>
+				</div>
 			</div>
 		</section>
 	</main>
 
-	<!-- Footer -->
 	<footer>
-		<p>&copy; 2024 Omar's Recipes. All rights reserved.</p>
+		<p>&copy; 2024 Recipe Haven. All rights reserved.</p>
 	</footer>
 </body>
 
