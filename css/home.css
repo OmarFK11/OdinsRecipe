@@ -14,10 +14,13 @@ body {
     padding: 0;
     background-color: #f8f8f8;
     font-weight: 450;
+    background-image: url('../images/samara.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 header {
-    background: url('../images/samara.jpg') no-repeat center center/cover;
     color: white;
     height: 100vh;
     display: flex;
@@ -34,36 +37,54 @@ nav {
     padding: 10px 0;
     position: absolute;
     top: 0;
+    display: flex;
+    justify-content: space-between;
 }
 
 nav .logo {
     color: floralwhite;
     font-size: 2.5rem;
-    margin-left: 25px;
+    margin-left: 1rem;
+    margin-right: 0px;
     float: left;
     font-weight: 800;
     font-family: meditative, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     margin-top: 6px;
 }
 
-.nav-links {
-    list-style: none;
+nav .nav-links-div {
+    margin-right: 10px;
     display: flex;
-    justify-content: center;
+    margin-left: 0px;
     align-items: center;
-    vertical-align: middle;
+    flex: 0.5 1 0%;
+    margin-right: 10px;
+    gap: 1rem;
+    justify-content: flex-end;
 }
 
-.nav-links li {
-    margin: 0 20px;
-}
 
-.nav-links a {
+.nav-links-div a {
     color: white;
-    text-decoration: none;
     font-size: 1.2rem;
     font-family: BreeSerif-Regular;
+    flex: 0 1 0%;
+    /* font-weight: 700; */
+    text-decoration: none;
 }
+
+
+/* .nav-links-div a::before() { */
+/*     text-decoration:none; */
+/* } */
+/**/
+
+/* .nav-links-div a :hover::before() { */
+/*     text-decoration: underline; */
+/* } */
+/**/
+/**/
+/**/
 
 .hero-section {
     max-width: 700px;
@@ -121,6 +142,8 @@ main {
     text-align: left;
     flex: 1 1 calc(33.333% - 40px);
     box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
 }
 
 .recipe-card img {
@@ -135,14 +158,15 @@ main {
 
 .recipe-card h3 {
     font-weight: 600;
-    font-size: 1.5rem;
     margin: 10px;
     /* font-family: BreeSerif-Regular; */
+    flex: auto;
 }
 
 .recipe-card p {
     font-size: 1rem;
     margin: 10px;
+    flex: auto;
 }
 
 footer {
